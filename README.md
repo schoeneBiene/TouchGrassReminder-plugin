@@ -9,6 +9,7 @@
 <a href="https://modrinth.com/project/touch-grass-reminder-plugin"><img alt="modrinth" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_vector.svg"> </a> 
 <img alt="spigot" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/supported/spigot_vector.svg">
 <img alt="bungeecord" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/unsupported/bungeecord_vector.svg">
+<img alt="touchgrassbadge" height="56" src="https://raw.githubusercontent.com/schoeneBiene/TouchGrassReminder-plugin/master/readme_img/badge.svg">
 </div>
 
 Plugin which notifies players when they play on your server for too long.
