@@ -3,7 +3,8 @@ version: '${project.version}'
 main: me.goodbee.touchgrassreminderplugin.TouchGrassReminder
 api-version: '1.19'
 load: POSTWORLD
+prefix: TouchGrassReminder
 
 commands:
-  touchgrass:
-    description: "test"
+  touchgrassreminder:
+    description: "Manage the TouchGrassReminder Plugin."

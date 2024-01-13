@@ -3,6 +3,7 @@ package me.goodbee.touchgrassreminderplugin;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
+import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -51,6 +52,12 @@ public class TimeTracking implements Listener {
 
                     if(spentTimeSeconds >= requiredTimeForToastInSeconds) {
                         Toast.displayTo(player, Material.TALL_GRASS.toString().toLowerCase(), ChatColor.YELLOW + "You've been playing for more than " + display, Toast.Style.GOAL);
+                        player.sendMessage(ChatColor.YELLOW + "You've been playing for more than " + display + "." + ChatColor.RED + " Studies have shown the negative impacts of excessive gaming on the brain. " + ChatColor.GREEN + ChatColor.UNDERLINE +  "https://www.health.harvard.edu/blog/the-health-effects-of-too-much-gaming-2020122221645");
+                        player.playSound(player.getLocation(), Sound.BLOCK_ANVIL_USE, 1, 1);
+
+                        if(publicShame) {
+                            Bukkit.broadcastMessage(ChatColor.RED + player.getName() + " has been playing for more than " + display + ". \n" + ChatColor.YELLOW + "Studies have shown the negative impacts of excessive gaming on the brain.");
+                        }
 
                         Bukkit.getScheduler().runTaskLater(TouchGrassReminder.getPlugin(), new Runnable() {
                             @Override
@@ -59,7 +66,7 @@ public class TimeTracking implements Listener {
                             }
                         }, 20);
 
-                        Bukkit.getLogger().info(Long.toString(spentTimeSeconds));
+                        playtimeMap.replace(player.getUniqueId().toString(), now);
                     }
                 }
             }
