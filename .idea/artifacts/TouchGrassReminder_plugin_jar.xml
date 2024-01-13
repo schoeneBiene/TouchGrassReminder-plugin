@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TouchGrassReminder-plugin:jar">
+    <output-path>$USER_HOME$/Desktop/Minecraft_Servers/PaperMC/plugins</output-path>
+    <root id="archive" name="TouchGrassReminder-plugin.jar">
+      <element id="module-output" name="TouchGrassReminder-plugin" />
+    </root>
+  </artifact>
+</component>

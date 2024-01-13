@@ -1,0 +1,9 @@
+name: TouchGrassReminder-plugin
+version: '1.0'
+main: me.goodbee.touchgrassreminderplugin.TouchGrassReminder
+api-version: '1.19'
+load: POSTWORLD
+
+commands:
+  touchgrass:
+    description: "test"

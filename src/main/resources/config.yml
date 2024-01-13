@@ -1,0 +1,9 @@
+# The time to wait before giving the reminder in seconds.
+reminderTime: 300
+
+# String, the time to display in-game, eg: 300 seconds = 5 minutes, 3600 seconds = 1 hour.
+# This should be accurate.
+display: 5 minutes
+
+# Whether to publicly send a message when a player hits the reminderTime or not
+public-shaming: false
